@@ -11,7 +11,8 @@ nav {
   height: auto;
   min-height: 5rem;
   max-height: 20rem;
-  background: black;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   width: 100%;
 }
 .container-row {
