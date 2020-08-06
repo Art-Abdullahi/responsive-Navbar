@@ -2,4 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+}
+
+nav {
+  height: 5rem;
+  background: black;
+  width: 100%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+h1 {
+  color: blanchedalmond;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+li {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
