@@ -3,19 +3,31 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
 }
 
 nav {
-  height: 5rem;
+  height: auto;
+  min-height: 5rem;
+  max-height: 20rem;
   background: black;
   width: 100%;
 }
-.container {
+.container-row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-end;
+  justify-content: flex-end;
   padding: 0.8rem;
 }
+
+.container-colomn {
+  background: black;
+  display: none;
+
+  align-items: center;
+}
+
 h1 {
   color: blanchedalmond;
 }
@@ -24,8 +36,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  overflow: hidden;
 }
 
 li {
@@ -33,4 +43,63 @@ li {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.show {
+  display: block;
+}
+.brand {
+  float: left;
+
+  padding: 2rem;
+}
+.bar {
+  display: none;
+  float: right;
+  text-align: right;
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+*/
+
+@media (max-width: 480px) {
+  .container-row {
+    display: none;
+  }
+  .container-colomn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bar {
+    display: flex;
+
+    font-size: larger;
+    margin: 1rem;
+  }
 }

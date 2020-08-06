@@ -3,17 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Navbar</title>
   </head>
   <body>
     <nav>
-      <div class="container">
-        <h1>LOGO</h1>
-        <ul>
+      <div class="brand"><h1>LOGO</h1></div>
+      <div>
+        <div class="bar">
+          <i onclick="container()" class="fas fa-bars fa-2x"></i>
+        </div>
+        <ul class="container-row" id="myContainer">
           <li>Home</li>
           <li>About</li>
-          <li>Projects</li>
+          <li class="dropdown" onclick="myFunction()">
+            Projects
+            <i class="fas fa-angle-down"></i>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Web Development</a>
+              <a href="#">Mobile App Development</a>
+              <a href="#">Graphic design</a>
+            </div>
+          </li>
+          <li>Pricing</li>
           <li>Contact Us</li>
         </ul>
       </div>
