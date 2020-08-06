@@ -23,7 +23,8 @@ nav {
 }
 
 .container-colomn {
-  background: black;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   display: none;
 
   align-items: center;
